@@ -1,11 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: process.env.NODE_ENV === "production" ? "export" : undefined,
+  output: "export",
   images: {
     unoptimized: true,
   },
-  trailingSlash: true,
+  trailingSlash: false,
   reactStrictMode: true,
 };
 
